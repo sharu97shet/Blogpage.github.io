@@ -1,0 +1,48 @@
+
+
+  {% include 'blogmenu.html'  %}
+
+
+  {% for message in messages %}
+                           
+  <div class="alert alert-success text-center">
+  
+    <h6> {{ message}} </h6>
+  
+  </div>
+                                                        
+              {% endfor %}
+
+              
+    <div class="container  mt-5">
+        
+          <div class="row  mt-4">
+          
+            {% for info in Blog %}
+        
+                    <div class="col-sm-4 mt-4">
+                      <p>
+                        <img src="http://127.0.0.1:8000/media/{{info.Image}}"  width="200px"  height="120px"/>
+          
+                       </p>
+        
+                    <p >{{info.BlogName}}</p>
+        
+                    <p class="text-info">{{info.Description}}</p>  
+                     
+                     <a  class="text-info mt-4" > <p>Read More </p> </a>
+        
+                    </div>
+                    
+          
+                    {% endfor %}
+                   
+                   
+                    
+                  </div>
+                  
+                  
+            
+            
+                </div>
+              </div>

@@ -1,0 +1,39 @@
+
+
+  {% include 'Dashboardblog.html'  %}
+
+
+  {% for message in messages %}
+                           
+  <div class="alert alert-success text-center">
+  
+    <h6> {{ message}} </h6>
+  
+  </div>
+                                                        
+              {% endfor %}
+
+              
+    <div class="container  mt-3">
+        
+
+                <div class="row  mt-4">
+                
+                   <div class="col-sm-12">
+        
+                    <p >{{Blog.BlogName}}</p>
+
+                    <p>{{Blog.Description}}</p>  
+
+                    <img  src="http://127.0.0.1:8000/media/{{Blog.Image}}" width="500px" height="350px"/>
+                     
+                  
+                    </div>
+                    
+          </div>
+                  
+                  
+            
+            
+                </div>
+              </div>
